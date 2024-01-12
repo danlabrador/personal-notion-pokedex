@@ -134,6 +134,8 @@ const createNotionPage = async () => {
           "HP": { "number": pokemon.hp },
           "Height": { "number": pokemon.height },
           "Weight": { "number": pokemon.weight },
+          "Attack": { "number": pokemon.attack },
+          "Defense": { "number": pokemon.defense },
           "Sp. Attack": { "number": pokemon['special-attack'] },
           "Sp. Defense": { "number": pokemon['special-defense'] },
           "Speed": { "number": pokemon.speed },
