@@ -33,26 +33,6 @@ This application also integrates with the Notion API to store the fetched Pokemo
 
 Please ensure you have the necessary permissions and API keys to interact with your desired Notion database.
 
-```js
-// Example of storing data in Notion
-const notion = new Client({ auth: process.env.NOTION_TOKEN });
-const databaseId = process.env.NOTION_DATABASE_ID;
-
-async function addItem(pokemonData) {
-  try {
-    await notion.pages.create({
-      parent: { database_id: databaseId },
-      properties: pokemonData
-    });
-    console.log('Success! Entry added to Notion database.');
-  } catch (error) {
-    console.error('Error: ', error.body);
-  }
-}
-```
-
-This snippet shows how the application uses the Notion API to store the fetched Pokemon data.
-
 ## Dependencies
 
 This application requires axios for making HTTP requests to the PokeAPI.
