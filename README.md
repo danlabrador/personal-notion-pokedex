@@ -1,6 +1,6 @@
 # Notion Pokedex
 
-This JavaScript application fetches data about Pokemon from the PokeAPI.
+This JavaScript application fetches data about Pokemon from the PokeAPI and store fetched data to a Notion database.
 
 ## Features
 
